@@ -1,0 +1,105 @@
+
+body {
+    background-color: #4b0082; /* Roxo escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+/*Animação*/
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    opacity: 0.8;
+    animation: fall linear infinite;
+    z-index: -1;
+}
+@keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
+  
+  /* Criando múltiplos flocos de neve dinamicamente */
+  @keyframes snowfall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+  }
+/*Animação*/
+/* Estilização do formulário */
+.form-container {
+    background: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Sombra suave */
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Título do formulário */
+  .form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #d8b6ff; /* Lilás claro para destacar */
+  }
+  
+  /* Estilização dos campos de entrada */
+  .form-control {
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Placeholder visível */
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Efeito ao focar nos campos */
+  .form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #d8b6ff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+ /*Estilizaçao do botao*/
+ .btn-custom {
+    background: linear-gradient(45deg, #800080, #4b0082); /* Degradê de roxo */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Efeito hover */
+  .btn-custom:hover {
+    background: linear-gradient(45deg, #9b30ff, #6a0dad); /* Tons mais claros no hover */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+  }
+  
+  /* Efeito de clique */
+  .btn-custom:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+  }
+  
