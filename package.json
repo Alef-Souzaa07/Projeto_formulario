@@ -1,0 +1,28 @@
+{
+  "name": "projeto_formulario",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "fundo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alef-Souzaa07/Projeto_formulario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alef-Souzaa07/Projeto_formulario/issues"
+  },
+  "homepage": "https://github.com/Alef-Souzaa07/Projeto_formulario#readme",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.4.1"
+  }
+}
