@@ -28,6 +28,26 @@ app.get('/usuarios', async (request, response) => {
     response.status(200).json(users);
     
 });
+
+app.put('/usuarios/:id', async (req, res) => { //O ":id" é uma variavel que recebera o id do usuario para atualizar
+
+    console.log(req);
+
+    await prisma.user.update({
+         where: {
+             id: req.params.id
+         },
+         data: {
+             email:   req.body.email,
+             name:    req.body.name,
+             sex:    req.body.sex,
+             age:    req.body.age  
+         }
+     });
+
+     res.status(201).json(req.body);
+
+});
 /*  Precisa do tipo de rota / metodo HTTP 
     Endereço
     */
